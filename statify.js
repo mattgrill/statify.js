@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var applyDefaults = require('./defaults');
 var args = applyDefaults(require('argsparser').parse());
 var connect = require('connect');

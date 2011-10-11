@@ -10,7 +10,7 @@
   "engines": {
     "node": "~0.4.12"
   },
-  "bin": "statify",
+  "bin": {"statify": "./statify.js"},
   "dependencies": {
     "connect": ">=1.7.0",
     "argsparser": ">=0.0.6"
