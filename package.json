@@ -1,0 +1,19 @@
+{
+  "author": "Leon Weidauer <techpriester@gmail.com> (http://sevenmil.es)",
+  "name": "statify",
+  "description": "A static file server to make any directory available via HTTP from the command line.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/techpriester/statify.js"
+  },
+  "main": "statify.js",
+  "engines": {
+    "node": "~v0.4.12"
+  },
+  "bin": "statify",
+  "dependencies": {
+    "connect": ">=1.7.0",
+    "argsparser": ">=0.0.6"
+  },
+  "devDependencies": {}
+}
