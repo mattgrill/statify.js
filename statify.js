@@ -7,9 +7,8 @@ if (args.dir.substr(0,1) !== '/')
     args.dir = __dirname + '/' + args.dir;
 }
 
-connect().
-    use(connect.logger()).
-    use(connect.staticCache()).
+connect().use(connect.logger()).
+    use(connect.staticCache({maxObjects: args.cache ? 128 : 0})).
     use(connect.static(args.dir)).
     listen(args.port);
 
