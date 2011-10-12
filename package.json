@@ -2,18 +2,28 @@
   "author": "Leon Weidauer <techpriester@gmail.com> (http://sevenmil.es)",
   "name": "statify",
   "description": "A static file server to make any directory available via HTTP from the command line.",
+  "keywords": ["static", "file", "server", "cli", "command line", "http"],
   "version": "1.0.2",
   "repository": {
-    "url": "https://github.com/techpriester/statify.js"
+    "type": "git",
+    "url": "git://github.com/techpriester/statify.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techpriester/statify.js/issues"
+  },
+  "licenses": {
+    "type": "APACHE",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0.txt"
   },
   "main": "statify.js",
   "engines": {
     "node": "~0.4.12"
   },
-  "bin": {"statify": "./statify.js"},
+  "bin": {
+    "statify": "./statify.js"
+  },
   "dependencies": {
     "connect": ">=1.7.0",
     "argsparser": ">=0.0.6"
-  },
-  "devDependencies": {}
+  }
 }
