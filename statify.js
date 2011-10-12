@@ -6,7 +6,7 @@ var connect = require('connect');
 
 if (args.dir.substr(0,1) !== '/')
 {
-    args.dir = __dirname + '/' + args.dir;
+    args.dir = process.cwd() + '/' + args.dir;
 }
 
 connect().use(connect.logger()).
