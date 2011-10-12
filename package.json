@@ -3,7 +3,7 @@
   "name": "statify",
   "description": "A static file server to make any directory available via HTTP from the command line.",
   "keywords": ["static", "file", "server", "cli", "command line", "http"],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/techpriester/statify.js.git"
