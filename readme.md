@@ -9,7 +9,8 @@ Installation
 ------------
 
 Statify can be installed via NPM
-´´´npm install -g statify´´´
+
+```npm install -g statify```
 
 Usage
 -----
