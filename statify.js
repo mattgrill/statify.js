@@ -28,9 +28,11 @@ if (args.dir.substr(0,1) !== '/')
     args.dir = process.cwd() + args.dir;
 }
 
+var noMiddleware = function(req,res,next){next();};
+
 connect().use(connect.logger()).
-    use(connect.staticCache({maxObjects: args.cache ? 128 : 0})).
-    use(args.list ? connect.directory(args.dir , {icons:true}): function(req,res,next){next();}).
+    use(args.list ? connect.directory(args.dir , {icons:true}): noMiddleware).
+    use(args.cache ? connect.staticCache() : noMiddleware).
     use(connect.static(args.dir)).
     listen(args.port);
 
