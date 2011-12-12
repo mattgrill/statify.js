@@ -7,7 +7,7 @@ args = applyDefaults(args);
 if ("help" in args && args.help)
 {
     console.log("\nUsage:");
-    console.log("\n-p <port>   Sets thre server port to <port>, defaults to 8000");
+    console.log("\n-p <port>   Sets the server port to <port>, defaults to 8000");
     console.log("\n-d <dir>    Sets the directory to be served to <dir>, defaults to the current directory.");
     console.log("\n-h/--help   Displays this message.");
     console.log("\n");
