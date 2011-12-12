@@ -21,5 +21,7 @@ The ```-p``` option lets you specify the port that the server will be listening 
 
 Caching is enabled by default. It can be disabled by passing the ```-c false``` option.
 
+```-l``` enables simplistic directories listing.
+
 Example: ```statify -d ~/Downloads -p 3000 -c false``` will serve your "Downloads" directory without caching on port 3000.
 
