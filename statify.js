@@ -9,6 +9,7 @@ if ("help" in args && args.help)
     console.log("\nUsage:");
     console.log("\n-p <port>   Sets the server port to <port>, defaults to 8000");
     console.log("\n-d <dir>    Sets the directory to be served to <dir>, defaults to the current directory.");
+    console.log("\n-l          Shows directories listings.");
     console.log("\n-h/--help   Displays this message.");
     console.log("\n");
     process.exit();
@@ -29,6 +30,7 @@ if (args.dir.substr(0,1) !== '/')
 
 connect().use(connect.logger()).
     use(connect.staticCache({maxObjects: args.cache ? 128 : 0})).
+    use(args.list ? connect.directory(args.dir , {icons:true}): function(req,res,next){next();}).
     use(connect.static(args.dir)).
     listen(args.port);
 

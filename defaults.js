@@ -1,13 +1,15 @@
 var defaults = {
     port: 8000,
     dir: '',
-    cache: true
+    cache: true,
+    list: false
 };
 
 var args_map = {
     '-p': 'port',
     '-c': 'cache',
     '-d': 'dir',
+    '-l': 'list',
     '-h': 'help',
     '--help': 'help'
 };
